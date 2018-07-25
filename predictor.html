@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Prediction Project</title>
+  <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href = "style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+
+<ul class="nav navbar-nav navbar-right">  
+<li><a href="index.html">Home</a></li>
+<li><a href="scikit.html">Linear Regression w/ SciKit-Learn</a></li>
+<li><a href="predictor.html">CA Temperature Estimator</a></li>
+<li><a href="tableau.html">Temperature Trend w/ Tableau</a></li>
+<li><a href="https://github.com/minxstm/weather_prediction_project">GitHub Repository    </a></li>
+</ul>
+</div>
+</nav>
+
+<br>
+<div class="container">
+      <br>	
+      <h1>Temperature Prediction w/ Machine Learning</h1>
+      <hr>
+      <br>
+                
+      <div class ="pull-left">
+
+<form name="CATemp">
+<table border="1" width="1000" height="200" cellpadding="10" cellspacing="3">
+<tr><th colspan="2"><h2>California Temperature Predictor</h2></th></tr>
+<tr>  <th><h4>Year</h4></th>
+<th><h4>Estimated Temperature</h4></th>    </tr>
+<tr></tr>
+<td><input type="number" name="year" id="input" onchange="calculate();"/></td>
+<td><input type="number" name="esttemp" id="output"></td>
+<table>
+
+</form>
+
+<script type="text/javascript">
+function calculate() {
+
+var USERINPUT1 = document.CATemp.year.value;
+var CALC1 = USERINPUT1*0.0190805;
+var CALC2 = CALC1+20.55911686;
+document.CATemp.esttemp.value = CALC2;
+
+}
+
+</script>
+
+</html>

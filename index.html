@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Prediction Project</title>
+  <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href = "style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+
+<ul class="nav navbar-nav navbar-right">  
+<li><a href="index.html">Home</a></li>
+<li><a href="scikit.html">Linear Regression w/ SciKit-Learn</a></li>
+<li><a href="predictor.html">CA Temperature Estimator</a></li>
+<li><a href="tableau.html">Temperature Trend w/ Tableau</a></li>
+<li><a href="https://github.com/minxstm/weather_prediction_project">GitHub Repository    </a></li>
+</ul>
+</div>
+</nav>
+
+<br>
+<div class="container">
+    <div>
+      <br>	
+      <h1>Temperature Prediction w/ Machine Learning</h1>
+      <hr>
+      <br>
+                
+        <img src="globalwarming.jpg" alt="Temperature Prediction w/ Machine Learning" width = "1100" height="558">
+    </div>
+                
+      <br>
+      <br>          
+      <p>For the final project, I wanted to use machine learning to see if I would be able to predict the temperature in the future.
+      </p>
+                
+      <p>The data set comes from Kaggle.com and included tempatures dating back to 1750 from all over the world.  For the regression model, I trimmed to data to only include California from 1900-2012 and computed the average temperature for each year.  Using the SciKit-Learn libary, I created a linear regression model and fitted the data set to the model while purposely withholding the 2000 data. The 2000 data was to be later used to validate the accuracy of the model.   
+      </p>
+
+      <p>Within SciKit-Learn, I used the coef_ and intercept_ attribute to get the x coefficient and y intercept that will be used in the temperature predictor model.  
+      </p>
+
+      <p>The tableau dashboard provides an interactive interface to allow the user to visualize the average temperature accross all states throughout the test period.  
+      </p>
+                
+      </div>
+
+</html>
